@@ -1,0 +1,48 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Oct 10 10:42:35 2021
+
+@author: Iqbal
+NAMA :IQBAL.A.MUNAWAR
+NIM : 064002100007
+"""
+
+import cmath as cm
+
+print("NAMA : IQBAL.A.MUNAWAR \n");
+print("NIM : 064002100007 \n");
+print("SOAL LATIHAN 2 \n");
+print("Buatlah program untuk mencari Akar Persamaan Kuadrat dan Determinan \n");
+print("-----------------------------------------------------------------------------------");
+
+A = int(input("masukan angka pertama : "))
+B = int(input("masukan angka kedua : "))
+C = int(input("masukan angka ketiga : "))
+
+if A == 0 : 
+    print("nilai 11 tidak boleh nol")
+    
+else:
+    rumus = (B**2) - (4*A*C)
+    
+    if rumus > 0 :
+        x1 = (-B +cm.sqrt(rumus))/(2*A)
+        x2 = (-B +cm.sqrt(rumus))/(2*A)
+        print("Hasil merupakan jenis akar yang berbeda")
+        print("jadi persamaan kuadratnya adalah",x1,"dan",x2)
+        print("dengan deteminan",rumus,)
+        
+    elif rumus == 0 :
+        x1 = (-B ) / (2*A)
+        x2 = (-B ) / (2*A)
+        print("Hasil merupakan jenis akar yang kembar")
+        print("jadi persamaan kuadratnya adalah",x1,"dan",x2)
+        print("dengan deteminan",rumus,)
+        
+    elif rumus < 0 :
+        x1 = (-B +cm.sqrt(rumus)) / (2*A)
+        x2 = (-B +cm.sqrt(rumus)) / (2*A)
+        
+        print("Hasil merupakan jenis akar imaginer")
+        print("jadi persamaan kuadratnya adalah",x1,"dan",x2)
+        print("dengan deteminan",rumus,)
