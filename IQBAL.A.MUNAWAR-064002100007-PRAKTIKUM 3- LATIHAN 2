@@ -8,7 +8,6 @@ NIM : 064002100007
 """
 
 import cmath as cm
-
 print("NAMA : IQBAL.A.MUNAWAR \n");
 print("NIM : 064002100007 \n");
 print("SOAL LATIHAN 2 \n");
@@ -33,8 +32,8 @@ else:
         print("dengan deteminan",rumus,)
         
     elif rumus == 0 :
-        x1 = (-B ) / (2*A)
-        x2 = (-B ) / (2*A)
+        x1 = (-B +cm.sqrt(rumus)) / (2*A)
+        x2 = (-B +cm.sqrt(rumus)) / (2*A)
         print("Hasil merupakan jenis akar yang kembar")
         print("jadi persamaan kuadratnya adalah",x1,"dan",x2)
         print("dengan deteminan",rumus,)
